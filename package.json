@@ -1,0 +1,18 @@
+{
+  "name": "basicsocialapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^3.0.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.15",
+    "swagger-ui-express": "^4.2.0",
+    "yamljs": "^0.3.0"
+  }
+}
