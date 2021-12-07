@@ -26,6 +26,22 @@ app.get("/api/v1/instagram", (req, res) => {
     res.status(200).send(instaSocial)
 })
 
+app.get("/api/v1/facebook", (req, res) => {
+    const fbSocial = {
+        username: "hitestchoudharyOfficialfb",
+        followers : 56,
+        follows: 30,
+        date: format.asString("dd/MM - hh:mm:ss", new Date())
+    }
+
+    res.status(200).send(fbSocial)
+})
+
+app.get("/api/v1/:token", (req, res) => {
+    const token = req.params.token
+    res.status(200).send({"params" : token})
+})
+
 app.listen(port, ()=>{
     console.log(`Server is running at ${port}`)
 })
